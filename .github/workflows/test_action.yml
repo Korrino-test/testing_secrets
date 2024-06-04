@@ -1,6 +1,8 @@
 name: 'testing secrets'
 
+on: workflow_dispatch
+
 jobs:
   print:
     steps:
-      run: echo $ORG_SECRET_1
+      - run: echo $ORG_SECRET_1
