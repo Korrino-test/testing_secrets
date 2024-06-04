@@ -5,5 +5,7 @@ on: workflow_dispatch
 jobs:
   print:
     runs-on: ubuntu-latest
+    env:
+      TEST_SECRET_ENV: ${{ secrets.ORG_SECRET_1 }}
     steps:
-      - run: echo $ORG_SECRET_1
+      - run: echo $TEST_SECRET_ENV
