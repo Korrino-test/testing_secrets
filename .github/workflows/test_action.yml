@@ -1,0 +1,6 @@
+name: 'testing secrets'
+
+jobs:
+  print:
+    steps:
+      run: echo $ORG_SECRET_1
